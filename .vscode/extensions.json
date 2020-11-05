@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "editorconfig.editorconfig",
+    "stylelint.vscode-stylelint",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "octref.vetur",
+    "bungcip.better-toml"
+  ]
+}

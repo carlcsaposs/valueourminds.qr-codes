@@ -1,0 +1,28 @@
+[build]
+  publish = "dist/"
+  command = "npm run generate"
+
+[build.processing]
+  skip_processing = true
+
+[[plugins]]
+  package = "netlify-plugin-csp-generator"
+
+  [plugins.inputs]
+    buildDir = "dist"
+
+  [plugins.inputs.policies]
+    defaultSrc = "'none'"
+    scriptSrc = "'self'"
+    styleSrc = "'self' 'unsafe-hashes'"
+    fontSrc = "'self'"
+    imgSrc = "'self'"
+    manifestSrc = "'self'"
+    baseUri = "'none'"
+    formAction = "'none'"
+    frameAncestors = "'none'"
+
+[[plugins]]
+  package = "netlify-plugin-checklinks"
+  [plugins.inputs]
+  checkExternal = true
