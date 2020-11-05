@@ -1,3 +1,2 @@
 # Netlify domain redirect
-# TODO: Remove this comment, uncomment the next line, replace "site-name" with the Netlify site name, and replace "custom-subdomain" with the subdomain of the website
-# https://site-name.netlify.app/* https://custom-subdomain.valueourminds.com 301!
+https://qr-codes-e4c760.netlify.app/* https://qr.valueourminds.com 301!
