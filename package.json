@@ -2,10 +2,10 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "generate": "npm run lint && nuxt generate --modern --fail-on-error",
+    "generate": "yarn lint && nuxt generate --modern --fail-on-error",
     "lint:js": "eslint --ext .js,.vue .",
     "lint:style": "stylelint **/*.{vue,css}",
-    "lint": "npm run lint:js && npm run lint:style"
+    "lint": "yarn lint:js && yarn lint:style"
   },
   "license": "MIT",
   "lint-staged": {
@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^4.0.0",
-    "@nuxtjs/eslint-module": "^3.0.0",
+    "@nuxtjs/eslint-module": "^2.0.0",
     "@nuxtjs/style-resources": "^1.0.0",
     "@nuxtjs/stylelint-module": "^4.0.0",
     "babel-eslint": "^10.1.0",
