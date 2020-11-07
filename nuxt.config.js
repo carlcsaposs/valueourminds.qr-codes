@@ -93,7 +93,7 @@ export default {
   bootstrapVue: {
     bootstrapCSS: false,
     bootstrapVueCSS: false,
-    componentPlugins: [],
+    componentPlugins: ['NavPlugin'],
   },
 
   styleResources: {

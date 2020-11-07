@@ -2,7 +2,11 @@
 
 @import 'fonts';
 // Additional bootstrap
+@import '~bootstrap/scss/reboot';
+@import '~bootstrap/scss/type';
+@import '~bootstrap/scss/grid';
 
+@import '~bootstrap/scss/nav';
 @import '~bootstrap/scss/utilities'; // Must be last bootstrap import
 // Required bootstrap-vue
 @import '~bootstrap-vue/src/utilities';
