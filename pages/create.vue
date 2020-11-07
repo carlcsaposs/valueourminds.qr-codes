@@ -1,6 +1,10 @@
 <template>
   <div>
-    <heading heading="Under construction" />
+    <heading heading="Create posters" />
+    <p>
+      Start a thread on Twist in #2-posters. Tag @Carl Csaposs and he will
+      manually generate the posters for you.
+    </p>
   </div>
 </template>
 
