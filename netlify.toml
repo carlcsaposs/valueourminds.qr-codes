@@ -1,6 +1,5 @@
 [build]
   publish = "dist/"
-  command = "yarn generate"
 
 [build.processing]
   skip_processing = true
