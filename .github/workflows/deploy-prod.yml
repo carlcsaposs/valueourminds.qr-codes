@@ -29,17 +29,17 @@ jobs:
         run: yarn generate
 
       - name: Netlify build plugins
-        uses: netlify/actions/cli@master
+        uses: valueourminds/netlify-cli-action@main
         with:
-          args: build
+          command: build
         env:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
 
       - name: Publish
-        uses: netlify/actions/cli@master
+        uses: valueourminds/netlify-cli-action@main
         with:
-          args: deploy --dir=dist --prod --message='PRODUCTION ${{ github.sha }}'
+          command: deploy --dir=dist --prod --message='PRODUCTION ${{ github.sha }}'
         env:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
