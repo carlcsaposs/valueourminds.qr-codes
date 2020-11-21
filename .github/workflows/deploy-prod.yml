@@ -39,7 +39,7 @@ jobs:
       - name: Publish
         uses: valueourminds/netlify-cli-action@main
         with:
-          command: deploy --dir=dist --prod --message='PRODUCTION ${{ github.sha }}'
+          command: deploy --dir=dist --prod --message=\"PRODUCTION ${{ github.sha }}\"
         env:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
