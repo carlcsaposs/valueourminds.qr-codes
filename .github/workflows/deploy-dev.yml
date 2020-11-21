@@ -6,6 +6,7 @@ on:
 
 jobs:
   deploy-dev:
+    if: github.repository == 'valueourminds/qr-codes'
     runs-on: ubuntu-latest
 
     steps:
