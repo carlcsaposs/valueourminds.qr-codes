@@ -7,16 +7,3 @@
     </p>
   </div>
 </template>
-
-<script>
-export default {
-  head: {
-    meta: [
-      {
-        name: 'robots',
-        content: 'noindex',
-      },
-    ],
-  },
-}
-</script>
