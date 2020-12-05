@@ -8,7 +8,13 @@
 
 @import '~bootstrap/scss/buttons';
 @import '~bootstrap/scss/nav';
+@import '~bootstrap/scss/forms';
+@import '~bootstrap/scss/custom-forms';
+@import '~bootstrap/scss/alert';
+@import '~bootstrap/scss/spinners';
 @import '~bootstrap/scss/utilities'; // Must be last bootstrap import
 // Required bootstrap-vue
 @import '~bootstrap-vue/src/utilities';
 // Additional bootstrap-vue
+@import '~bootstrap-vue/src/components/form-input/index';
+@import '~bootstrap-vue/src/components/form-checkbox/index';

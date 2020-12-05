@@ -17,6 +17,7 @@
     fontSrc = "'self'"
     imgSrc = "'self'"
     manifestSrc = "'self'"
+    connectSrc = "'self' https://firestore.googleapis.com"
     baseUri = "'none'"
     formAction = "'none'"
     frameAncestors = "'none'"

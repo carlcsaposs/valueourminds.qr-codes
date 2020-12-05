@@ -1,5 +1,6 @@
 <template>
   <b-nav id="footer" align="center">
+    <b-nav-item to="/">Homepage</b-nav-item>
     <b-nav-item to="/privacy/">Privacy</b-nav-item>
   </b-nav>
 </template>
