@@ -29,13 +29,13 @@
           </b-form-radio-group>
         </b-form-group>
         <b-form-group label="Number of posters" label-for="input-2">
-          <!-- max is set to 500 since Firestore batch writes have a maximum of 500 operations -->
+          <!-- max is set to 250 since Firestore batch writes have a maximum of 500 operations and each write counts as 2 operations (1 for the document write, 1 for the server timestamp) -->
           <b-form-input
             id="input-2"
             v-model="form.quantity"
             type="number"
             min="1"
-            max="500"
+            max="250"
             required
           ></b-form-input>
         </b-form-group>
@@ -141,6 +141,7 @@ export default {
           .collection('qr_code_events')
           .where('type', '==', 'generate')
           .where('qr_id', 'in', ids)
+          .limit(9)
           .get()
         querySnapshot.forEach(function (doc) {
           // Remove ID from array
@@ -217,16 +218,12 @@ export default {
       if (window.location.hostname === 'qr.valueourminds.com') {
         // Send IDs to Firestore
         const batch = this.$fire.firestore.batch()
-        const now = this.$fireModule.firestore.Timestamp.now().toMillis()
-        // Save date instead of full timestamp to respect user privacy
-        const date = now - (now % 86400000)
         const col = this.$fire.firestore.collection('qr_code_events')
         for (let i = 0; i < ids.length; i++) {
           const qrId = ids[i]
           batch.set(col.doc(), {
             qr_id: qrId,
-            date: this.$fireModule.firestore.Timestamp.fromMillis(date),
-            index: 0,
+            timestamp: this.$fireModule.firestore.FieldValue.serverTimestamp(),
             type: 'generate',
             design: Number(designId),
           })

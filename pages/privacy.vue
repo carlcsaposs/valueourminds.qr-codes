@@ -54,7 +54,7 @@
               </li>
             </ul>
           </li>
-          <li>The date (in UTC) the poster was downloaded</li>
+          <li>The time the poster was downloaded, to the nearest nanosecond</li>
           <li>Which poster design was selected</li>
         </ul>
       </li>
