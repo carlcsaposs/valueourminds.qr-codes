@@ -186,7 +186,7 @@ export default {
           const qrId = ids[n]
           // Generate qr code
           const generatedQR = await QRCode.toString(
-            'HTTPS://L.VALUEOURMINDS.COM/' + qrId,
+            'HTTPS://L.VALUEOURMINDS.COM' + qrId,
             {
               type: 'svg',
               errorCorrectionLevel: 'M',
