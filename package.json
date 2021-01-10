@@ -22,7 +22,7 @@
     "bootstrap": "^4.5.2",
     "bootstrap-vue": "^2.21.0",
     "core-js": "^3.8.1",
-    "fflate": "^0.4.2",
+    "fflate": "^0.4.8",
     "firebase": "^8.2.0",
     "nuxt": "^2.14.12",
     "pdf-lib": "^1.13.0",
