@@ -21,7 +21,7 @@
     "@nuxtjs/firebase": "^7.1.2",
     "bootstrap": "^4.5.2",
     "bootstrap-vue": "^2.21.2",
-    "core-js": "^3.8.1",
+    "core-js": "^3.8.2",
     "fflate": "^0.4.8",
     "firebase": "^8.2.2",
     "nuxt": "^2.14.12",
