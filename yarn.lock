@@ -8581,10 +8581,10 @@ pbkdf2@^3.0.3:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-pdf-lib@^1.13.0:
-  version "1.13.0"
-  resolved "https://registry.yarnpkg.com/pdf-lib/-/pdf-lib-1.13.0.tgz#5442ecf7c32e7cbef3a22dab0acdf72bf65f0225"
-  integrity sha512-OO6HMcrXRYJi3np77znd1i1BBDxRDBTREthQjeXLtkJw3SO7TUPk47G8yHNGC+zpo8PDUWjECx8HM+b48RfxbA==
+pdf-lib@^1.15.0:
+  version "1.15.0"
+  resolved "https://registry.yarnpkg.com/pdf-lib/-/pdf-lib-1.15.0.tgz#ba4f9543182625247959a0ad7c7cab67105cabab"
+  integrity sha512-xh+sV95ROpmwJ2m8az47347qIQxk/Qs1yIMdBhBKrsJMnteDsZwbGy8W9udMs9z7U5qv0Hc1P6qx77qjzCcaEQ==
   dependencies:
     "@pdf-lib/standard-fonts" "^1.0.0"
     "@pdf-lib/upng" "^1.0.1"
