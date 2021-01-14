@@ -5119,10 +5119,10 @@ faye-websocket@0.11.3:
   dependencies:
     websocket-driver ">=0.5.1"
 
-fflate@^0.4.8:
-  version "0.4.8"
-  resolved "https://registry.yarnpkg.com/fflate/-/fflate-0.4.8.tgz#f90b82aefbd8ac174213abb338bd7ef848f0f5ae"
-  integrity sha512-FJqqoDBR00Mdj9ppamLa/Y7vxm+PRmNWA67N846RvsoYVMKB4q3y/de5PA7gUmRMYK/8CMz2GDZQmCRN1wBcWA==
+fflate@^0.5.3:
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/fflate/-/fflate-0.5.3.tgz#3c31a9a7a7953bdc2b12e9cb40b036489681794c"
+  integrity sha512-dqbv+EQgc1odHZfe67tYmRNzdlkGTFlYMDjwgbMZq5YLk7J7M1Ud/BRSDLwMSfcJEA26ha9EcvENMDW6RhsRAw==
 
 figgy-pudding@^3.5.1:
   version "3.5.2"
