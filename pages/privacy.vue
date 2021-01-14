@@ -64,7 +64,7 @@
     <p>
       If you have any questions about this privacy policy, please send an email
       to
-      <a href="mailto:valueourminds@gmail.com">valueourminds@gmail.com</a>.
+      <a href="mailto:contact@valueourminds.com">contact@valueourminds.com</a>.
     </p>
   </div>
 </template>
